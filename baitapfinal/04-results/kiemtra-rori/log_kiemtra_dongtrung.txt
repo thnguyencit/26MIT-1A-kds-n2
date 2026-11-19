@@ -1,0 +1,4 @@
+modcloth_final_data.json.gz pair-dup rows 756 fully identical rows 754
+ groups 378 groups with identical review_text 377
+renttherunway_final_data.json.gz pair-dup rows 510 fully identical rows 378
+ groups 255 groups with identical review_text 219

@@ -1,0 +1,12 @@
+== modcloth 82790 cols: ['user_id', 'item_id', 'size', 'category', 'context', 'body_type', 'y', 'item_size'] body: ['height', 'bust_band', 'cup', 'bust', 'waist', 'hips', 'shoe']
+ leaky in df/body: []
+ size median 12.0 top sizes {8: 17893, 12: 17343, 4: 13883, 20: 7292, 15: 6883}
+ dup (user,item,size) rows: 756 groups: 378
+ cold: user overlap train-test/train-val (seed1..3) [(0, 0), (0, 0), (0, 0)]; test rows whose (user,item,size) also in train: mean 0.00%   sizes test: 8059
+ warm: user overlap train-test/train-val (seed1..3) [(4066, 3977), (4103, 4118), (4151, 4131)]; test rows whose (user,item,size) also in train: mean 0.77% label agree 99.7%  sizes test: 8189
+== rtr 192544 cols: ['user_id', 'item_id', 'size', 'category', 'context', 'body_type', 'y', 'item_size'] body: ['height', 'weight', 'age', 'bust_band', 'cup', 'bmi']
+ leaky in df/body: []
+ size median 12.0 top sizes {8: 40804, 4: 29562, 12: 24702, 20: 18500, 16: 17668}
+ dup (user,item,size) rows: 510 groups: 255
+ cold: user overlap train-test/train-val (seed1..3) [(0, 0), (0, 0), (0, 0)]; test rows whose (user,item,size) also in train: mean 0.00%   sizes test: 19075
+ warm: user overlap train-test/train-val (seed1..3) [(8905, 8763), (8953, 8800), (9045, 9037)]; test rows whose (user,item,size) also in train: mean 0.21% label agree 96.7%  sizes test: 19331
