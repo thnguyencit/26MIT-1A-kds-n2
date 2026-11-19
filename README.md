@@ -10,6 +10,8 @@
 | 264148 | Trần Anh Tuấn | trananhtuan131481176@gmail.com | Thành viên |
 | 264231 | Nguyễn Thanh Toàn | thanhtoanhgtv@gmail.com | Thành viên |
 
+Danh sách thành viên cũng có trong file `thanhvien-nhom02.txt`.
+
 ## Cấu trúc
 
 ```
