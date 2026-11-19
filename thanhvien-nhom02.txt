@@ -1,15 +1,12 @@
-﻿NHÓM 02 - LỚP 26MIT-1A - MÔN KINH DOANH SỐ
-Trường Đại học Nam Cần Thơ
-
+﻿NHÓM 2 - LỚP 26MIT-1A 
 Trưởng nhóm: Nguyễn Minh Thơ (MSHV 264165) - ngminhthotech@gmail.com
-
 Danh sách thành viên:
-STT | MSHV   | Họ tên            | Email                           | Vai trò
-1   | 264165 | Nguyễn Minh Thơ   | ngminhthotech@gmail.com         | Trưởng nhóm
-2   | 264137 | Nguyễn Minh Duy   | duyfc11126@gmail.com            | Thành viên
-3   | 264118 | Từ Thế Hiện       | tuthehien2618@gmail.com         | Thành viên
-4   | 264148 | Trần Anh Tuấn     | trananhtuan131481176@gmail.com  | Thành viên
-5   | 264231 | Nguyễn Thanh Toàn | thanhtoanhgtv@gmail.com         | Thành viên
 
-Đề tài Final: Overcoming Size Vanity in Online Retailing: An Intelligent Recommendation System for Apparel Fit
-GitHub: https://github.com/thnguyencit/26MIT-1A-kds-n2
+264165  Nguyễn Minh Thơ    ngminhthotech@gmail.com          Trưởng nhóm
+264137  Nguyễn Minh Duy    duyfc11126@gmail.com             Thành viên
+264118  Từ Thế Hiện        tuthehien2618@gmail.com          Thành viên
+264148  Trần Anh Tuấn      trananhtuan131481176@gmail.com   Thành viên
+264231  Nguyễn Thanh Toàn  thanhtoanhgtv@gmail.com          Thành viên
+
+Đề tài : Overcoming Size Vanity in Online Retailing: An Intelligent Recommendation System for Apparel Fit
+
