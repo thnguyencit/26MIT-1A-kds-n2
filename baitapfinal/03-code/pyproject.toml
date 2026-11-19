@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sizerec"
+version = "1.0.0"
+description = "Hybrid Matrix Factorization cho gợi ý size thời trang (cold-start)"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas", "scikit-learn", "scipy", "torch", "rich"]
+
+[project.scripts]
+sizerec = "sizerec.cli:main"
+
+[tool.setuptools]
+packages = ["sizerec"]

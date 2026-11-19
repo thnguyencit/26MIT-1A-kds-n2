@@ -1,0 +1,285 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+    "python.testing.pytestEnabled": false
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "W1. Minh chứng workflow: ModCloth, cold-start",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/scripts/verify_workflow.py",
+        "args": [
+          "${workspaceFolder}/../02-data/modcloth_final_data.json.gz"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      {
+        "name": "W2. Minh chứng workflow: RentTheRunway, warm",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/scripts/verify_workflow.py",
+        "args": [
+          "${workspaceFolder}/../02-data/renttherunway_final_data.json.gz",
+          "--protocol",
+          "warm"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      {
+        "name": "W3. Minh chứng workflow: chọn dữ liệu + giao thức",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/scripts/verify_workflow.py",
+        "args": [
+          "${workspaceFolder}/../02-data/${input:wfdata}",
+          "--protocol",
+          "${input:wfproto}"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      {
+        "name": "0. Chế độ tương tác (menu)",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "shell"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "1. sizerec info",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "info"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "2. Thống kê dữ liệu RentTheRunway",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "data",
+          "${workspaceFolder}/../02-data/renttherunway_final_data.json.gz"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "3. Thực nghiệm nhanh (ModCloth, cold, 1 seed)",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "experiment",
+          "${workspaceFolder}/../02-data/modcloth_final_data.json.gz",
+          "--quick",
+          "-o",
+          "../04-results/quick/modcloth"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "4. Thực nghiệm đầy đủ ModCloth (5 seed)",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "experiment",
+          "${workspaceFolder}/../02-data/modcloth_final_data.json.gz",
+          "-o",
+          "../04-results/experiment/modcloth"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "5. Thực nghiệm đầy đủ RentTheRunway (5 seed)",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "experiment",
+          "${workspaceFolder}/../02-data/renttherunway_final_data.json.gz",
+          "-o",
+          "../04-results/experiment/rtr"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "6. Huấn luyện mô hình RentTheRunway",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "train",
+          "${workspaceFolder}/../02-data/renttherunway_final_data.json.gz",
+          "-o",
+          "../04-results/models/rtr.pt"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "7. Gợi ý size: khách mới theo số đo",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "recommend",
+          "../04-results/models/rtr.pt",
+          "--item",
+          "126335",
+          "--height",
+          "5'6\"",
+          "--weight",
+          "140lbs",
+          "--bust-size",
+          "34c",
+          "--body-type",
+          "hourglass",
+          "--explain"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "8. Gợi ý size: khách cũ theo user_id",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "recommend",
+          "../04-results/models/rtr.pt",
+          "--item",
+          "126335",
+          "--user",
+          "691468",
+          "--explain"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "9. Gợi ý size: nhập tuỳ ý",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "sizerec",
+        "args": [
+          "recommend",
+          "../04-results/models/rtr.pt",
+          "--item",
+          "${input:item}",
+          "--height",
+          "${input:height}",
+          "--weight",
+          "${input:weight}",
+          "--bust-size",
+          "${input:bust}",
+          "--explain"
+        ],
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "10. Kiểm thử nhanh (dữ liệu giả lập)",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/tests/test_smoke.py",
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "item",
+        "type": "promptString",
+        "description": "item_id",
+        "default": "126335"
+      },
+      {
+        "id": "height",
+        "type": "promptString",
+        "description": "Chiều cao (5'6\" hoặc 168cm)",
+        "default": "168cm"
+      },
+      {
+        "id": "weight",
+        "type": "promptString",
+        "description": "Cân nặng (130lbs hoặc 59kg)",
+        "default": "59kg"
+      },
+      {
+        "id": "bust",
+        "type": "promptString",
+        "description": "Cỡ áo ngực (vd 34b)",
+        "default": "34b"
+      },
+      {
+        "id": "wfdata",
+        "type": "pickString",
+        "description": "Bộ dữ liệu",
+        "options": [
+          "modcloth_final_data.json.gz",
+          "renttherunway_final_data.json.gz"
+        ],
+        "default": "modcloth_final_data.json.gz"
+      },
+      {
+        "id": "wfproto",
+        "type": "pickString",
+        "description": "Giao thức",
+        "options": [
+          "cold",
+          "warm"
+        ],
+        "default": "cold"
+      }
+    ]
+  }
+}

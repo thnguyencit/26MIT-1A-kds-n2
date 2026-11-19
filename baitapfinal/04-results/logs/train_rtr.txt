@@ -1,0 +1,10 @@
+$ sizerec train ../02-data/renttherunway_final_data.json.gz -o ../04-results/models/rtr.pt
+
+✓ Đã nạp rtr: 192,544 tương tác, 105,571 người dùng, 5,850 sản phẩm (4.2s)
+› Huấn luyện mf_body_product trên 173,091 tương tác, kiểm định trên 19,453
+  epoch  1  train NLL=1.0303  val AUC=0.7410  (1.7s)
+  epoch  2  train NLL=0.8674  val AUC=0.7460  (1.1s)
+  epoch  3  train NLL=0.7353  val AUC=0.7369  (1.1s)
+  epoch  4  train NLL=0.6107  val AUC=0.7266  (1.1s)
+  epoch  5  train NLL=0.5074  val AUC=0.7216  (1.1s)
+✓ Val AUC=0.7460, Macro-F1=0.5471. Đã lưu mô hình: ../04-results/models/rtr.pt

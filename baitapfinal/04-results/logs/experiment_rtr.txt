@@ -1,0 +1,298 @@
+✓ Đã nạp rtr: 192,544 tương tác, 105,571 người dùng, 5,850 sản phẩm (3.8s)
+╭──────────────────────────────────────────────────────────────────────────────╮
+│ Thực nghiệm trên rtr                                                         │
+│ giao thức: cold, warm · seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] · 6 mô hình · │
+│ bootstrap: 200 · CPU 4 luồng                                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[rtr|cold|seed 1] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 1] body_lr                  test AUC=0.6270 (23.7s)
+[rtr|cold|seed 1] mf                       test AUC=0.7223 (5.9s)
+[rtr|cold|seed 1] mf_body                  test AUC=0.7232 (4.4s)
+[rtr|cold|seed 1] body_product             test AUC=0.7307 (3.1s)
+[rtr|cold|seed 1] mf_body_product          test AUC=0.7320 (5.6s)
+[rtr|cold|seed 1] xong sau 46s
+[rtr|cold|seed 2] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 2] body_lr                  test AUC=0.6169 (22.2s)
+[rtr|cold|seed 2] mf                       test AUC=0.7173 (4.7s)
+[rtr|cold|seed 2] mf_body                  test AUC=0.7224 (4.8s)
+[rtr|cold|seed 2] body_product             test AUC=0.7259 (3.0s)
+[rtr|cold|seed 2] mf_body_product          test AUC=0.7265 (4.5s)
+[rtr|cold|seed 2] xong sau 42s
+[rtr|cold|seed 3] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 3] body_lr                  test AUC=0.6279 (22.4s)
+[rtr|cold|seed 3] mf                       test AUC=0.7248 (4.8s)
+[rtr|cold|seed 3] mf_body                  test AUC=0.7263 (5.4s)
+[rtr|cold|seed 3] body_product             test AUC=0.7357 (2.8s)
+[rtr|cold|seed 3] mf_body_product          test AUC=0.7361 (4.5s)
+[rtr|cold|seed 3] xong sau 43s
+[rtr|cold|seed 4] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 4] body_lr                  test AUC=0.6207 (23.9s)
+[rtr|cold|seed 4] mf                       test AUC=0.7251 (4.9s)
+[rtr|cold|seed 4] mf_body                  test AUC=0.7280 (4.3s)
+[rtr|cold|seed 4] body_product             test AUC=0.7330 (2.9s)
+[rtr|cold|seed 4] mf_body_product          test AUC=0.7331 (4.5s)
+[rtr|cold|seed 4] xong sau 44s
+[rtr|cold|seed 5] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 5] body_lr                  test AUC=0.6191 (23.5s)
+[rtr|cold|seed 5] mf                       test AUC=0.7254 (5.0s)
+[rtr|cold|seed 5] mf_body                  test AUC=0.7301 (5.2s)
+[rtr|cold|seed 5] body_product             test AUC=0.7318 (2.9s)
+[rtr|cold|seed 5] mf_body_product          test AUC=0.7348 (5.6s)
+[rtr|cold|seed 5] xong sau 45s
+[rtr|cold|seed 6] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 6] body_lr                  test AUC=0.6161 (24.0s)
+[rtr|cold|seed 6] mf                       test AUC=0.7226 (4.8s)
+[rtr|cold|seed 6] mf_body                  test AUC=0.7289 (5.2s)
+[rtr|cold|seed 6] body_product             test AUC=0.7308 (3.1s)
+[rtr|cold|seed 6] mf_body_product          test AUC=0.7328 (5.5s)
+[rtr|cold|seed 6] xong sau 46s
+[rtr|cold|seed 7] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 7] body_lr                  test AUC=0.6176 (22.1s)
+[rtr|cold|seed 7] mf                       test AUC=0.7189 (4.7s)
+[rtr|cold|seed 7] mf_body                  test AUC=0.7186 (4.8s)
+[rtr|cold|seed 7] body_product             test AUC=0.7249 (3.0s)
+[rtr|cold|seed 7] mf_body_product          test AUC=0.7274 (5.5s)
+[rtr|cold|seed 7] xong sau 43s
+[rtr|cold|seed 8] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 8] body_lr                  test AUC=0.6168 (20.6s)
+[rtr|cold|seed 8] mf                       test AUC=0.7212 (4.8s)
+[rtr|cold|seed 8] mf_body                  test AUC=0.7231 (5.0s)
+[rtr|cold|seed 8] body_product             test AUC=0.7247 (3.1s)
+[rtr|cold|seed 8] mf_body_product          test AUC=0.7284 (5.2s)
+[rtr|cold|seed 8] xong sau 42s
+[rtr|cold|seed 9] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 9] body_lr                  test AUC=0.6174 (21.3s)
+[rtr|cold|seed 9] mf                       test AUC=0.7195 (4.7s)
+[rtr|cold|seed 9] mf_body                  test AUC=0.7206 (5.5s)
+[rtr|cold|seed 9] body_product             test AUC=0.7259 (3.0s)
+[rtr|cold|seed 9] mf_body_product          test AUC=0.7274 (5.6s)
+[rtr|cold|seed 9] xong sau 43s
+[rtr|cold|seed 10] majority                 test AUC=0.5000 (0.0s)
+[rtr|cold|seed 10] body_lr                  test AUC=0.6157 (20.6s)
+[rtr|cold|seed 10] mf                       test AUC=0.7232 (5.1s)
+[rtr|cold|seed 10] mf_body                  test AUC=0.7193 (5.3s)
+[rtr|cold|seed 10] body_product             test AUC=0.7258 (3.7s)
+[rtr|cold|seed 10] mf_body_product          test AUC=0.7273 (5.5s)
+[rtr|cold|seed 10] xong sau 43s
+[rtr|warm|seed 1] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 1] body_lr                  test AUC=0.6240 (18.7s)
+[rtr|warm|seed 1] mf                       test AUC=0.7261 (4.0s)
+[rtr|warm|seed 1] mf_body                  test AUC=0.7265 (4.3s)
+[rtr|warm|seed 1] body_product             test AUC=0.7306 (3.0s)
+[rtr|warm|seed 1] mf_body_product          test AUC=0.7379 (5.7s)
+[rtr|warm|seed 1] xong sau 39s
+[rtr|warm|seed 2] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 2] body_lr                  test AUC=0.6207 (18.7s)
+[rtr|warm|seed 2] mf                       test AUC=0.7220 (4.3s)
+[rtr|warm|seed 2] mf_body                  test AUC=0.7258 (5.3s)
+[rtr|warm|seed 2] body_product             test AUC=0.7266 (3.8s)
+[rtr|warm|seed 2] mf_body_product          test AUC=0.7340 (5.6s)
+[rtr|warm|seed 2] xong sau 41s
+[rtr|warm|seed 3] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 3] body_lr                  test AUC=0.6184 (24.3s)
+[rtr|warm|seed 3] mf                       test AUC=0.7268 (4.4s)
+[rtr|warm|seed 3] mf_body                  test AUC=0.7291 (5.3s)
+[rtr|warm|seed 3] body_product             test AUC=0.7306 (3.9s)
+[rtr|warm|seed 3] mf_body_product          test AUC=0.7365 (5.6s)
+[rtr|warm|seed 3] xong sau 47s
+[rtr|warm|seed 4] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 4] body_lr                  test AUC=0.6158 (17.2s)
+[rtr|warm|seed 4] mf                       test AUC=0.7284 (4.0s)
+[rtr|warm|seed 4] mf_body                  test AUC=0.7248 (5.0s)
+[rtr|warm|seed 4] body_product             test AUC=0.7315 (3.1s)
+[rtr|warm|seed 4] mf_body_product          test AUC=0.7336 (5.9s)
+[rtr|warm|seed 4] xong sau 38s
+[rtr|warm|seed 5] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 5] body_lr                  test AUC=0.6237 (20.4s)
+[rtr|warm|seed 5] mf                       test AUC=0.7231 (4.2s)
+[rtr|warm|seed 5] mf_body                  test AUC=0.7275 (5.8s)
+[rtr|warm|seed 5] body_product             test AUC=0.7312 (3.4s)
+[rtr|warm|seed 5] mf_body_product          test AUC=0.7348 (5.7s)
+[rtr|warm|seed 5] xong sau 43s
+[rtr|warm|seed 6] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 6] body_lr                  test AUC=0.6200 (28.5s)
+[rtr|warm|seed 6] mf                       test AUC=0.7257 (3.9s)
+[rtr|warm|seed 6] mf_body                  test AUC=0.7318 (5.5s)
+[rtr|warm|seed 6] body_product             test AUC=0.7308 (3.7s)
+[rtr|warm|seed 6] mf_body_product          test AUC=0.7403 (6.1s)
+[rtr|warm|seed 6] xong sau 51s
+[rtr|warm|seed 7] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 7] body_lr                  test AUC=0.6196 (21.4s)
+[rtr|warm|seed 7] mf                       test AUC=0.7223 (4.3s)
+[rtr|warm|seed 7] mf_body                  test AUC=0.7204 (4.5s)
+[rtr|warm|seed 7] body_product             test AUC=0.7296 (3.0s)
+[rtr|warm|seed 7] mf_body_product          test AUC=0.7344 (5.8s)
+[rtr|warm|seed 7] xong sau 42s
+[rtr|warm|seed 8] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 8] body_lr                  test AUC=0.6187 (23.5s)
+[rtr|warm|seed 8] mf                       test AUC=0.7188 (4.3s)
+[rtr|warm|seed 8] mf_body                  test AUC=0.7214 (5.2s)
+[rtr|warm|seed 8] body_product             test AUC=0.7243 (3.0s)
+[rtr|warm|seed 8] mf_body_product          test AUC=0.7295 (5.5s)
+[rtr|warm|seed 8] xong sau 45s
+[rtr|warm|seed 9] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 9] body_lr                  test AUC=0.6191 (18.7s)
+[rtr|warm|seed 9] mf                       test AUC=0.7266 (4.2s)
+[rtr|warm|seed 9] mf_body                  test AUC=0.7332 (5.6s)
+[rtr|warm|seed 9] body_product             test AUC=0.7377 (3.0s)
+[rtr|warm|seed 9] mf_body_product          test AUC=0.7423 (5.8s)
+[rtr|warm|seed 9] xong sau 41s
+[rtr|warm|seed 10] majority                 test AUC=0.5000 (0.0s)
+[rtr|warm|seed 10] body_lr                  test AUC=0.6170 (27.6s)
+[rtr|warm|seed 10] mf                       test AUC=0.7249 (4.5s)
+[rtr|warm|seed 10] mf_body                  test AUC=0.7277 (5.4s)
+[rtr|warm|seed 10] body_product             test AUC=0.7287 (3.1s)
+[rtr|warm|seed 10] mf_body_product          test AUC=0.7350 (5.9s)
+[rtr|warm|seed 10] xong sau 50s
+ cold-start: người dùng test chưa từng xuất hiện (n≈19,267, 
+                          10 seed)                          
+                                                            
+  Mô hình             AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  majority             0.5000 ± 0.0000     0.2829   0.7373  
+  body_lr              0.6195 ± 0.0044     0.4209   0.5880  
+  mf                   0.7220 ± 0.0028     0.5022   0.6918  
+  mf_body              0.7241 ± 0.0041     0.5307   0.6928  
+  body_product         0.7289 ± 0.0039     0.5240   0.6759  
+  mf_body_product ★    0.7305 ± 0.0036     0.5348   0.6927  
+                                                            
+         warm: toàn bộ tập test (n≈19,269, 10 seed)         
+                                                            
+  Mô hình             AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  majority             0.5000 ± 0.0000     0.2830   0.7375  
+  body_lr              0.6197 ± 0.0026     0.4241   0.5887  
+  mf                   0.7245 ± 0.0029     0.4735   0.5303  
+  mf_body              0.7268 ± 0.0041     0.5316   0.7001  
+  body_product         0.7302 ± 0.0035     0.5281   0.6732  
+  mf_body_product ★    0.7358 ± 0.0036     0.5450   0.7102  
+                                                            
+warm: người dùng có 0 lịch sử trong train (n≈7,997, 10 seed)
+                                                            
+  Mô hình             AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  majority             0.5000 ± 0.0000     0.2864   0.7531  
+  body_lr              0.6246 ± 0.0046     0.4246   0.6343  
+  mf                   0.7278 ± 0.0059     0.4616   0.5186  
+  mf_body              0.7255 ± 0.0068     0.5263   0.7112  
+  body_product         0.7337 ± 0.0069     0.5281   0.6858  
+  mf_body_product ★    0.7350 ± 0.0067     0.5403   0.7223  
+                                                            
+warm: người dùng có 1 lịch sử trong train (n≈3,662, 10 seed)
+                                                            
+  Mô hình             AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  majority             0.5000 ± 0.0000     0.2819   0.7328  
+  body_lr              0.6135 ± 0.0093     0.4218   0.5930  
+  mf                   0.7229 ± 0.0070     0.4714   0.5246  
+  mf_body              0.7249 ± 0.0068     0.5314   0.6993  
+  body_product         0.7286 ± 0.0106     0.5262   0.6716  
+  mf_body_product ★    0.7327 ± 0.0108     0.5415   0.7080  
+                                                            
+  warm: người dùng có 2-4 lịch sử trong train (n≈4,026, 10  
+                           seed)                            
+                                                            
+  Mô hình             AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  majority             0.5000 ± 0.0000     0.2810   0.7288  
+  body_lr              0.6164 ± 0.0074     0.4209   0.5664  
+  mf                   0.7257 ± 0.0079     0.4811   0.5364  
+  mf_body              0.7297 ± 0.0115     0.5363   0.6943  
+  body_product         0.7319 ± 0.0089     0.5305   0.6647  
+  mf_body_product ★    0.7390 ± 0.0106     0.5483   0.7032  
+                                                            
+  warm: người dùng có 5+ lịch sử trong train (n≈3,584, 10   
+                           seed)                            
+                                                            
+  Mô hình             AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  majority             0.5000 ± 0.0000     0.2785   0.7175  
+  body_lr              0.6077 ± 0.0093     0.4009   0.5077  
+  mf                   0.7215 ± 0.0072     0.4923   0.5553  
+  mf_body              0.7267 ± 0.0102     0.5328   0.6826  
+  body_product         0.7211 ± 0.0110     0.5226   0.6564  
+  mf_body_product ★    0.7351 ± 0.0110     0.5486   0.6935  
+                                                            
+  Kiểm định: mf_body_product ★ so với từng mô hình (paired bootstrap + paired   
+                               t-test theo seed)                                
+                                                                                
+  Nhóm       So với            ΔAUC        CI 95%   p boot   p t-test   p<0.05  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  cold/all   majority       +0.2305      [+0.228,   <0.005      0.000   có      
+                                          +0.233]                               
+  cold/all   body_lr        +0.1110      [+0.109,   <0.005      0.000   có      
+                                          +0.113]                               
+  cold/all   mf             +0.0085      [+0.007,   <0.005      0.000   có      
+                                          +0.010]                               
+  cold/all   mf_body        +0.0065      [+0.005,   <0.005      0.000   có      
+                                          +0.008]                               
+  cold/all   body_product   +0.0016      [+0.001,   <0.005      0.002   có      
+                                          +0.003]                               
+  warm/0     majority       +0.2350      [+0.232,   <0.005      0.000   có      
+                                          +0.238]                               
+  warm/0     body_lr        +0.1104      [+0.107,   <0.005      0.000   có      
+                                          +0.114]                               
+  warm/0     mf             +0.0072      [+0.005,   <0.005      0.000   có      
+                                          +0.010]                               
+  warm/0     mf_body        +0.0095      [+0.008,   <0.005      0.000   có      
+                                          +0.011]                               
+  warm/0     body_product   +0.0013      [-0.001,    0.180      0.303   không   
+                                          +0.003]                               
+  warm/1     majority       +0.2327      [+0.227,   <0.005      0.000   có      
+                                          +0.237]                               
+  warm/1     body_lr        +0.1193      [+0.113,   <0.005      0.000   có      
+                                          +0.125]                               
+  warm/1     mf             +0.0098      [+0.006,   <0.005      0.006   có      
+                                          +0.013]                               
+  warm/1     mf_body        +0.0079      [+0.005,   <0.005      0.002   có      
+                                          +0.011]                               
+  warm/1     body_product   +0.0041      [+0.002,   <0.005      0.013   có      
+                                          +0.006]                               
+  warm/2-4   majority       +0.2390      [+0.235,   <0.005      0.000   có      
+                                          +0.244]                               
+  warm/2-4   body_lr        +0.1225      [+0.116,   <0.005      0.000   có      
+                                          +0.127]                               
+  warm/2-4   mf             +0.0132      [+0.010,   <0.005      0.000   có      
+                                          +0.017]                               
+  warm/2-4   mf_body        +0.0093      [+0.007,   <0.005      0.000   có      
+                                          +0.011]                               
+  warm/2-4   body_product   +0.0070      [+0.004,   <0.005      0.004   có      
+                                          +0.010]                               
+  warm/5+    majority       +0.2351      [+0.231,   <0.005      0.000   có      
+                                          +0.240]                               
+  warm/5+    body_lr        +0.1273      [+0.121,   <0.005      0.000   có      
+                                          +0.133]                               
+  warm/5+    mf             +0.0135      [+0.010,   <0.005      0.000   có      
+                                          +0.017]                               
+  warm/5+    mf_body        +0.0084      [+0.006,   <0.005      0.002   có      
+                                          +0.012]                               
+  warm/5+    body_product   +0.0139      [+0.011,   <0.005      0.000   có      
+                                          +0.017]                               
+  warm/all   majority       +0.2358      [+0.233,   <0.005      0.000   có      
+                                          +0.238]                               
+  warm/all   body_lr        +0.1161      [+0.113,   <0.005      0.000   có      
+                                          +0.118]                               
+  warm/all   mf             +0.0114      [+0.010,   <0.005      0.000   có      
+                                          +0.013]                               
+  warm/all   mf_body        +0.0090      [+0.008,   <0.005      0.000   có      
+                                          +0.010]                               
+  warm/all   body_product   +0.0057      [+0.005,   <0.005      0.000   có      
+                                          +0.007]                               
+                                                                                
+Đề xuất size: so với size khách thực sự mặc vừa (giao dịch 'fit' trong tập test)
+                                                                                
+  Giao thức   Phương pháp             Trùng đúng size   Lệch ≤ 1 size        n  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  cold        Size bán chạy nhất                20.7%           51.3%   14,168  
+              của sản phẩm (mốc)                                                
+  cold        Chỉ số đo cơ thể                  40.1%           79.1%   14,168  
+  cold        Số đo + lịch sử người             40.1%           79.1%   14,168  
+              dùng (hybrid) ★                                                   
+  warm        Size bán chạy nhất                20.9%           51.5%   14,172  
+              của sản phẩm (mốc)                                                
+  warm        Chỉ số đo cơ thể                  39.7%           79.0%   14,172  
+  warm        Số đo + lịch sử người             44.5%           82.3%   14,172  
+              dùng (hybrid) ★                                                   
+                                                                                
+✓ Hoàn tất sau 1258s. Kết quả lưu tại /tmp/claude-0/bf/exp10/rtr (summary.csv, 
+significance.csv, metrics_per_seed.csv, report.md)

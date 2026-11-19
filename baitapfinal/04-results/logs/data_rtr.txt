@@ -1,0 +1,25 @@
+$ sizerec data ../02-data/renttherunway_final_data.json.gz
+
+✓ Đã nạp rtr: 192,544 tương tác, 105,571 người dùng, 5,850 sản phẩm (4.3s)
+                      Bộ dữ liệu rtr                      
+                                                          
+  Mục                              Giá trị                
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Tương tác                        192,544                
+  Người dùng                       105,571                
+  Sản phẩm / cặp sản phẩm-size     5,850 / 30,815         
+  Danh mục                         68                     
+  User chỉ có 1 tương tác          68.0%                  
+  Tỉ lệ nhãn small / fit / large   13.4% / 73.8% / 12.8%  
+                                                          
+                              
+  Số đo cơ thể   Tỉ lệ thiếu  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  height                0.4%  
+  weight               15.6%  
+  age                   0.5%  
+  bust_band             9.6%  
+  cup                   9.6%  
+  bmi                  15.8%  
+                              
+Các trường bị loại để tránh rò rỉ thông tin sau mua: review_text, review_summary, rating, quality, length

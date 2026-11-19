@@ -1,0 +1,66 @@
+{
+  "dataset": "modcloth",
+  "data_path": "/tmp/claude-0/bf/baitapfinal/02-data/modcloth_final_data.json.gz",
+  "protocols": [
+    "cold",
+    "warm"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "models": [
+    "majority",
+    "body_lr",
+    "mf",
+    "mf_body",
+    "body_product",
+    "mf_body_product",
+    "mf_body_product_nodrop"
+  ],
+  "hparams": {
+    "dim": 16,
+    "hidden": 64,
+    "lr": 0.003,
+    "l2": 0.01,
+    "batch": 1024,
+    "epochs": 30,
+    "patience": 3
+  },
+  "id_drop": 0.1,
+  "bootstrap": 200,
+  "version": "1.0.0",
+  "finished": "2026-11-11T03:51:29",
+  "data": {
+    "dataset": "modcloth",
+    "interactions": 82790,
+    "users": 47958,
+    "items": 1378,
+    "item_sizes": 5005,
+    "categories": 7,
+    "users_with_1_interaction": 0.6645398056632887,
+    "fit_ratio": {
+      "small": 0.15670974755405243,
+      "fit": 0.6855538108467206,
+      "large": 0.15773644159922695
+    },
+    "body_missing": {
+      "height": 0.014023432781736924,
+      "bust_band": 0.07268993839835729,
+      "cup": 0.07555260297137335,
+      "bust": 0.8568184563353062,
+      "waist": 0.9651890324918468,
+      "hips": 0.32281676530982,
+      "shoe": 0.6628336755646818
+    }
+  },
+  "note": "mf_body_product_nodrop chạy riêng với cùng seed (abl_*.txt); mf_body_product cho kết quả giống hệt nên ghép trực tiếp"
+}

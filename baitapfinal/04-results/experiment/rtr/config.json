@@ -1,0 +1,65 @@
+{
+  "dataset": "rtr",
+  "data_path": "/tmp/claude-0/bf/baitapfinal/02-data/renttherunway_final_data.json.gz",
+  "protocols": [
+    "cold",
+    "warm"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "models": [
+    "majority",
+    "body_lr",
+    "mf",
+    "mf_body",
+    "body_product",
+    "mf_body_product",
+    "mf_body_product_nodrop"
+  ],
+  "hparams": {
+    "dim": 16,
+    "hidden": 64,
+    "lr": 0.003,
+    "l2": 0.01,
+    "batch": 1024,
+    "epochs": 30,
+    "patience": 3
+  },
+  "id_drop": 0.1,
+  "bootstrap": 200,
+  "version": "1.0.0",
+  "finished": "2026-11-11T04:12:35",
+  "data": {
+    "dataset": "rtr",
+    "interactions": 192544,
+    "users": 105571,
+    "items": 5850,
+    "item_sizes": 30815,
+    "categories": 68,
+    "users_with_1_interaction": 0.6803383504939804,
+    "fit_ratio": {
+      "small": 0.13388628053847432,
+      "fit": 0.7377949975070633,
+      "large": 0.12831872195446237
+    },
+    "body_missing": {
+      "height": 0.0035160794415821837,
+      "weight": 0.15571505733754362,
+      "age": 0.0049858733588166865,
+      "bust_band": 0.09561970250955626,
+      "cup": 0.09561970250955626,
+      "bmi": 0.15806776632873526
+    }
+  },
+  "note": "mf_body_product_nodrop chạy riêng với cùng seed (abl_*.txt); mf_body_product cho kết quả giống hệt nên ghép trực tiếp"
+}

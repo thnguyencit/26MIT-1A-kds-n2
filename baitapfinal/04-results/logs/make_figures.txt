@@ -1,0 +1,14 @@
+Vẽ hình vào ../04-results/figures
+  ✓ fig1_data_overview.png
+  ✓ fig2_auc_cold_start.png
+  ✓ fig3_auc_by_history.png
+  ✓ fig4_significance_delta_auc.png
+  ✓ fig5_size_recommendation.png
+  ✓ fig6_auc_boxplot.png
+Writing figures to ../04-results/figures/en
+  ✓ fig1_data_overview.png
+  ✓ fig2_auc_cold_start.png
+  ✓ fig3_auc_by_history.png
+  ✓ fig4_significance_delta_auc.png
+  ✓ fig5_size_recommendation.png
+  ✓ fig6_auc_boxplot.png

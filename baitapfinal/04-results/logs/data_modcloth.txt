@@ -1,0 +1,26 @@
+$ sizerec data ../02-data/modcloth_final_data.json.gz
+
+✓ Đã nạp modcloth: 82,790 tương tác, 47,958 người dùng, 1,378 sản phẩm (1.9s)
+                   Bộ dữ liệu modcloth                    
+                                                          
+  Mục                              Giá trị                
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Tương tác                        82,790                 
+  Người dùng                       47,958                 
+  Sản phẩm / cặp sản phẩm-size     1,378 / 5,005          
+  Danh mục                         7                      
+  User chỉ có 1 tương tác          66.5%                  
+  Tỉ lệ nhãn small / fit / large   15.7% / 68.6% / 15.8%  
+                                                          
+                              
+  Số đo cơ thể   Tỉ lệ thiếu  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  height                1.4%  
+  bust_band             7.3%  
+  cup                   7.6%  
+  bust                 85.7%  
+  waist                96.5%  
+  hips                 32.3%  
+  shoe                 66.3%  
+                              
+Các trường bị loại để tránh rò rỉ thông tin sau mua: review_text, review_summary, rating, quality, length

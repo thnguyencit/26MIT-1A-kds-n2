@@ -1,0 +1,85 @@
+orig SIG    bucket            vs  delta_auc  ci95_low  ci95_high  p_bootstrap  p_ttest
+6     2-4            mf     0.0231    0.0184     0.0271          0.0   0.0000
+7     2-4       mf_body     0.0107    0.0070     0.0142          0.0   0.0000
+8     2-4  body_product     0.0146    0.0105     0.0185          0.0   0.0001
+9      5+            mf     0.0276    0.0204     0.0340          0.0   0.0000
+10     5+       mf_body     0.0091    0.0052     0.0142          0.0   0.0012
+11     5+  body_product     0.0133    0.0073     0.0199          0.0   0.0049
+12    all            mf     0.0191    0.0172     0.0213          0.0   0.0000
+13    all       mf_body     0.0069    0.0052     0.0088          0.0   0.0000
+14    all  body_product     0.0072    0.0057     0.0088          0.0   0.0005
+orig SUMMARY                           mean     std
+bucket model                          
+0      body_product     0.6749  0.0042
+       mf               0.6581  0.0049
+       mf_body          0.6713  0.0071
+       mf_body_product  0.6767  0.0064
+1      body_product     0.6743  0.0106
+       mf               0.6694  0.0100
+       mf_body          0.6760  0.0092
+       mf_body_product  0.6808  0.0103
+2-4    body_product     0.6715  0.0135
+       mf               0.6630  0.0104
+       mf_body          0.6755  0.0121
+       mf_body_product  0.6861  0.0118
+5+     body_product     0.6848  0.0165
+       mf               0.6706  0.0118
+       mf_body          0.6890  0.0108
+       mf_body_product  0.6981  0.0153
+all    body_product     0.6750  0.0047
+       mf               0.6631  0.0032
+       mf_body          0.6753  0.0050
+       mf_body_product  0.6823  0.0048
+orig             exact  within_1
+method                     
+body     0.440389  0.876680
+hybrid   0.510459  0.916638
+popular  0.255142  0.623668
+dedup rows 82413
+dedup SIG    bucket            vs  delta_auc  ci95_low  ci95_high  p_bootstrap  p_ttest
+6     2-4            mf     0.0215    0.0172     0.0255          0.0   0.0000
+7     2-4       mf_body     0.0066    0.0032     0.0102          0.0   0.0050
+8     2-4  body_product     0.0115    0.0084     0.0147          0.0   0.0015
+9      5+            mf     0.0261    0.0185     0.0328          0.0   0.0000
+10     5+       mf_body     0.0109    0.0060     0.0157          0.0   0.0004
+11     5+  body_product     0.0182    0.0120     0.0245          0.0   0.0005
+12    all            mf     0.0211    0.0189     0.0234          0.0   0.0000
+13    all       mf_body     0.0053    0.0037     0.0070          0.0   0.0002
+14    all  body_product     0.0067    0.0051     0.0084          0.0   0.0000
+dedup SUMMARY                           mean     std
+bucket model                          
+0      body_product     0.6776  0.0100
+       mf               0.6579  0.0087
+       mf_body          0.6757  0.0110
+       mf_body_product  0.6776  0.0116
+1      body_product     0.6742  0.0134
+       mf               0.6616  0.0126
+       mf_body          0.6751  0.0142
+       mf_body_product  0.6827  0.0148
+2-4    body_product     0.6713  0.0112
+       mf               0.6614  0.0078
+       mf_body          0.6762  0.0111
+       mf_body_product  0.6829  0.0098
+5+     body_product     0.6801  0.0145
+       mf               0.6722  0.0147
+       mf_body          0.6874  0.0169
+       mf_body_product  0.6983  0.0166
+all    body_product     0.6758  0.0047
+       mf               0.6613  0.0055
+       mf_body          0.6771  0.0051
+       mf_body_product  0.6825  0.0045
+dedup             exact  within_1
+method                     
+body     0.439687  0.877131
+hybrid   0.511751  0.915893
+popular  0.255276  0.623008
+                          orig   dedup    diff
+bucket model                                  
+2-4    body_product     0.6715  0.6713 -0.0002
+       mf               0.6630  0.6614 -0.0016
+       mf_body          0.6755  0.6762  0.0008
+       mf_body_product  0.6861  0.6829 -0.0033
+all    body_product     0.6750  0.6758  0.0008
+       mf               0.6631  0.6613 -0.0018
+       mf_body          0.6753  0.6771  0.0018
+       mf_body_product  0.6823  0.6825  0.0002

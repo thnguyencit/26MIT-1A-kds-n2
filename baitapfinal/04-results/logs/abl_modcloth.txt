@@ -1,0 +1,144 @@
+✓ Đã nạp modcloth: 82,790 tương tác, 47,958 người dùng, 1,378 sản phẩm (1.7s)
+╭──────────────────────────────────────────────────────────────────────────────╮
+│ Thực nghiệm trên modcloth                                                    │
+│ giao thức: cold, warm · seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] · 2 mô hình · │
+│ bootstrap: 200 · CPU 4 luồng                                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[modcloth|cold|seed 1] mf_body_product          test AUC=0.6717 (3.5s)
+[modcloth|cold|seed 1] mf_body_product_nodrop   test AUC=0.6728 (2.5s)
+[modcloth|cold|seed 1] xong sau 7s
+[modcloth|cold|seed 2] mf_body_product          test AUC=0.6868 (2.0s)
+[modcloth|cold|seed 2] mf_body_product_nodrop   test AUC=0.6843 (1.9s)
+[modcloth|cold|seed 2] xong sau 5s
+[modcloth|cold|seed 3] mf_body_product          test AUC=0.6828 (2.2s)
+[modcloth|cold|seed 3] mf_body_product_nodrop   test AUC=0.6826 (2.2s)
+[modcloth|cold|seed 3] xong sau 5s
+[modcloth|cold|seed 4] mf_body_product          test AUC=0.6803 (2.2s)
+[modcloth|cold|seed 4] mf_body_product_nodrop   test AUC=0.6781 (2.2s)
+[modcloth|cold|seed 4] xong sau 5s
+[modcloth|cold|seed 5] mf_body_product          test AUC=0.6654 (3.0s)
+[modcloth|cold|seed 5] mf_body_product_nodrop   test AUC=0.6645 (2.7s)
+[modcloth|cold|seed 5] xong sau 6s
+[modcloth|cold|seed 6] mf_body_product          test AUC=0.6769 (2.3s)
+[modcloth|cold|seed 6] mf_body_product_nodrop   test AUC=0.6760 (2.0s)
+[modcloth|cold|seed 6] xong sau 5s
+[modcloth|cold|seed 7] mf_body_product          test AUC=0.6858 (3.0s)
+[modcloth|cold|seed 7] mf_body_product_nodrop   test AUC=0.6875 (2.4s)
+[modcloth|cold|seed 7] xong sau 6s
+[modcloth|cold|seed 8] mf_body_product          test AUC=0.6806 (3.3s)
+[modcloth|cold|seed 8] mf_body_product_nodrop   test AUC=0.6832 (2.5s)
+[modcloth|cold|seed 8] xong sau 6s
+[modcloth|cold|seed 9] mf_body_product          test AUC=0.6823 (3.8s)
+[modcloth|cold|seed 9] mf_body_product_nodrop   test AUC=0.6865 (2.4s)
+[modcloth|cold|seed 9] xong sau 7s
+[modcloth|cold|seed 10] mf_body_product          test AUC=0.6779 (1.9s)
+[modcloth|cold|seed 10] mf_body_product_nodrop   test AUC=0.6775 (2.2s)
+[modcloth|cold|seed 10] xong sau 5s
+[modcloth|warm|seed 1] mf_body_product          test AUC=0.6842 (2.5s)
+[modcloth|warm|seed 1] mf_body_product_nodrop   test AUC=0.6781 (2.3s)
+[modcloth|warm|seed 1] xong sau 5s
+[modcloth|warm|seed 2] mf_body_product          test AUC=0.6835 (2.3s)
+[modcloth|warm|seed 2] mf_body_product_nodrop   test AUC=0.6877 (2.3s)
+[modcloth|warm|seed 2] xong sau 5s
+[modcloth|warm|seed 3] mf_body_product          test AUC=0.6798 (2.2s)
+[modcloth|warm|seed 3] mf_body_product_nodrop   test AUC=0.6814 (1.9s)
+[modcloth|warm|seed 3] xong sau 5s
+[modcloth|warm|seed 4] mf_body_product          test AUC=0.6860 (2.0s)
+[modcloth|warm|seed 4] mf_body_product_nodrop   test AUC=0.6853 (2.6s)
+[modcloth|warm|seed 4] xong sau 5s
+[modcloth|warm|seed 5] mf_body_product          test AUC=0.6827 (1.9s)
+[modcloth|warm|seed 5] mf_body_product_nodrop   test AUC=0.6879 (1.8s)
+[modcloth|warm|seed 5] xong sau 4s
+[modcloth|warm|seed 6] mf_body_product          test AUC=0.6862 (2.3s)
+[modcloth|warm|seed 6] mf_body_product_nodrop   test AUC=0.6829 (2.4s)
+[modcloth|warm|seed 6] xong sau 5s
+[modcloth|warm|seed 7] mf_body_product          test AUC=0.6754 (2.3s)
+[modcloth|warm|seed 7] mf_body_product_nodrop   test AUC=0.6769 (2.3s)
+[modcloth|warm|seed 7] xong sau 5s
+[modcloth|warm|seed 8] mf_body_product          test AUC=0.6727 (2.0s)
+[modcloth|warm|seed 8] mf_body_product_nodrop   test AUC=0.6731 (1.9s)
+[modcloth|warm|seed 8] xong sau 5s
+[modcloth|warm|seed 9] mf_body_product          test AUC=0.6871 (2.4s)
+[modcloth|warm|seed 9] mf_body_product_nodrop   test AUC=0.6857 (2.2s)
+[modcloth|warm|seed 9] xong sau 5s
+[modcloth|warm|seed 10] mf_body_product          test AUC=0.6850 (1.8s)
+[modcloth|warm|seed 10] mf_body_product_nodrop   test AUC=0.6804 (2.0s)
+[modcloth|warm|seed 10] xong sau 4s
+  cold-start: người dùng test chưa từng xuất hiện (n≈8,248, 10   
+                              seed)                              
+                                                                 
+  Mô hình                  AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  mf_body_product ★         0.6790 ± 0.0065     0.4862   0.6002  
+  mf_body_product_nodrop    0.6793 ± 0.0071     0.4866   0.5966  
+                                                                 
+            warm: toàn bộ tập test (n≈8,293, 10 seed)            
+                                                                 
+  Mô hình                  AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  mf_body_product ★         0.6823 ± 0.0048     0.4916   0.5911  
+  mf_body_product_nodrop    0.6819 ± 0.0049     0.4868   0.6033  
+                                                                 
+  warm: người dùng có 0 lịch sử trong train (n≈3,571, 10 seed)   
+                                                                 
+  Mô hình                  AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  mf_body_product ★         0.6767 ± 0.0064     0.4883   0.5972  
+  mf_body_product_nodrop    0.6763 ± 0.0039     0.4816   0.6081  
+                                                                 
+  warm: người dùng có 1 lịch sử trong train (n≈1,782, 10 seed)   
+                                                                 
+  Mô hình                  AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  mf_body_product ★         0.6808 ± 0.0103     0.4903   0.5883  
+  mf_body_product_nodrop    0.6811 ± 0.0106     0.4878   0.6007  
+                                                                 
+ warm: người dùng có 2-4 lịch sử trong train (n≈1,998, 10 seed)  
+                                                                 
+  Mô hình                  AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  mf_body_product ★         0.6862 ± 0.0118     0.4934   0.5877  
+  mf_body_product_nodrop    0.6847 ± 0.0147     0.4880   0.5981  
+                                                                 
+   warm: người dùng có 5+ lịch sử trong train (n≈943, 10 seed)   
+                                                                 
+  Mô hình                  AUC (mean ± std)   Macro-F1      Acc  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  mf_body_product ★         0.6981 ± 0.0153     0.4987   0.5803  
+  mf_body_product_nodrop    0.6998 ± 0.0146     0.4983   0.6009  
+                                                                 
+  Kiểm định: mf_body_product ★ so với từng mô hình (paired bootstrap + paired   
+                               t-test theo seed)                                
+                                                                                
+  Nhóm       So với            ΔAUC        CI 95%   p boot   p t-test   p<0.05  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  cold/all   mf_body_pro…   -0.0003      [-0.001,    0.600      0.710   không   
+                                          +0.001]                               
+  warm/0     mf_body_pro…   +0.0004      [-0.001,    0.610      0.738   không   
+                                          +0.003]                               
+  warm/1     mf_body_pro…   -0.0004      [-0.003,    0.880      0.801   không   
+                                          +0.003]                               
+  warm/2-4   mf_body_pro…   +0.0014      [-0.002,    0.290      0.442   không   
+                                          +0.004]                               
+  warm/5+    mf_body_pro…   -0.0017      [-0.006,    0.390      0.464   không   
+                                          +0.002]                               
+  warm/all   mf_body_pro…   +0.0003      [-0.001,    0.680      0.786   không   
+                                          +0.002]                               
+                                                                                
+Đề xuất size: so với size khách thực sự mặc vừa (giao dịch 'fit' trong tập test)
+                                                                                
+  Giao thức   Phương pháp              Trùng đúng size   Lệch ≤ 1 size       n  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  cold        Size bán chạy nhất của             25.5%           62.4%   5,617  
+              sản phẩm (mốc)                                                    
+  cold        Chỉ số đo cơ thể                   44.0%           88.0%   5,617  
+  cold        Số đo + lịch sử người              44.0%           88.0%   5,617  
+              dùng (hybrid) ★                                                   
+  warm        Size bán chạy nhất của             25.5%           62.4%   5,683  
+              sản phẩm (mốc)                                                    
+  warm        Chỉ số đo cơ thể                   44.0%           87.7%   5,683  
+  warm        Số đo + lịch sử người              51.0%           91.7%   5,683  
+              dùng (hybrid) ★                                                   
+                                                                                
+✓ Hoàn tất sau 144s. Kết quả lưu tại /tmp/claude-0/bf/exp10/abl_modcloth 
+(summary.csv, significance.csv, metrics_per_seed.csv, report.md)

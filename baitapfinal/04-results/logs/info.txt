@@ -1,0 +1,27 @@
+$ sizerec info
+
+╭───────────────────────────────────────────────────────╮
+│ sizerec 1.0.0                                         │
+│ Hybrid Matrix Factorization cho gợi ý size thời trang │
+╰───────────────────────────────────────────────────────╯
+                       Môi trường                        
+                                                         
+  Mục                             Giá trị                
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Python                          3.13.18                
+  PyTorch                         2.15.0+cu132           
+  NumPy / pandas / scikit-learn   2.5.3 / 3.0.5 / 1.9.1  
+  Thiết bị                        CPU (4 luồng)          
+                                                         
+                                            Các mô hình có sẵn                                            
+                                                                                                          
+  Mô hình                  Mô tả                                                                          
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  majority                 Luôn dự đoán 'fit' (mốc dưới)                                                  
+  body_lr                  Logistic Regression trên số đo + sản phẩm (thuộc tính tường minh, tuyến tính)  
+  mf                       MF thứ bậc thuần: chỉ latent factor cộng tác (user, item, item-size)           
+  mf_body                  MF + số đo cơ thể tích hợp vào vector ẩn người dùng                            
+  mf_body_product ★        MF + số đo cơ thể + đặc trưng sản phẩm (MÔ HÌNH ĐỀ XUẤT)                       
+  body_product             Chỉ số đo + sản phẩm, không có latent của người dùng (phi tuyến)               
+  mf_body_product_nodrop   Mô hình đề xuất nhưng không ID dropout (ablation)                              
+                                                                                                          

@@ -1,0 +1,391 @@
+$ sizerec recommend ../04-results/models/rtr.pt --item 126335 --height 165cm --weight 57kg --bust-size 34b --body-type petite --age 22 --explain
+
+╭────────────────────────────────────────╮
+│ Gợi ý size cho sản phẩm 126335 (dress) │
+│ người dùng mới (cold-start)            │
+╰────────────────────────────────────────╯
+Số đo dùng (đơn vị inch / lbs): height=64.9606, weight=125.663, age=22, bust_band=34, cup=2, bmi=20.9345
+       Các size của sản phẩm (size mục tiêu ≈ 7.1)        
+                                                          
+  Size   Cách size mục tiêu   P(vừa)   P(chật)   P(rộng)  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  8                     0.9    47.2%     23.3%     29.5%  
+  4                     3.1    40.6%     12.7%     46.7%  
+  12                    4.9    47.3%     24.1%     28.6%  
+  16                    8.9    47.4%     25.6%     27.0%  
+  20                   12.9    46.0%     34.6%     19.4%  
+  24                   16.9    45.1%     37.1%     17.7%  
+  28                   20.9    38.2%     50.9%     10.9%  
+  32                   24.9    36.0%     54.4%      9.6%  
+  35                   27.9    34.5%     56.6%      8.9%  
+  39                   31.9    30.9%     61.8%      7.3%  
+                                                          
+✓ Size đề xuất: 8 · mô hình hybrid: P(vừa) 47.2%, P(chật) 23.3%, P(rộng) 29.5%
+! Mô hình hybrid thấy rủi ro RỘNG ở size này hơi cao (29%). Tuy vậy size nhỏ hơn kế tiếp (4) không an toàn hơn (P(vừa) 
+41%), nên vẫn giữ size 8.
+            Giải thích: chọn size             
+                                              
+  Cách tính size mục tiêu            Giá trị  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Size nền theo số đo cơ thể            6.23  
+  Size nền theo lịch sử mua                —  
+  Trọng số lịch sử (n / (n + 2))        0.00  
+  Điều chỉnh theo danh mục 'dress'     +0.28  
+  Sản phẩm chạy to (-) / nhỏ (+)       +0.59  
+  Size mục tiêu                         7.10  
+                                              
+   Giải thích: rủi ro không vừa của size đề xuất (mô hình   
+                         hybrid MF)                         
+                                                            
+  Thành phần của điểm t (size đề xuất)             Giá trị  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Sản phẩm & size (độ lệch chung của item-size)     +0.047  
+  Lịch sử cộng tác của người dùng (p_u, b_u)        +0.000  
+  Số đo cơ thể (E(x), g(x))                         +0.087  
+  Chênh lệch size so với size ước lượng từ số đo    -0.009  
+  Tổng điểm t                                       +0.125  
+                                                            
+  Quy tắc: t < -1.064 → chật (small); -1.064 ≤ t ≤ 0.998 → vừa (fit); t > 0.998 → rộng (large)
+  Thành phần dương đẩy về phía 'rộng', âm đẩy về phía 'chật'.
+                                                             
+  Đặc trưng cơ thể (phần tuyến tính g)   z-score   Đóng góp  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  weight                                   -0.54     -0.050  
+  age                                      -1.47     -0.036  
+  bmi                                      -0.51     +0.034  
+  body_type=petite                         +1.00     -0.015  
+  cup                                      -0.84     +0.008  
+                                                             
+
+$ sizerec recommend ../04-results/models/rtr.pt --item 126335 --user 691468 --explain
+
+╭──────────────────────────────────────────╮
+│ Gợi ý size cho sản phẩm 126335 (dress)   │
+│ user 691468 (đã có lịch sử, 386 lịch sử) │
+╰──────────────────────────────────────────╯
+       Các size của sản phẩm (size mục tiêu ≈ 7.7)        
+                                                          
+  Size   Cách size mục tiêu   P(vừa)   P(chật)   P(rộng)  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  8                     0.3    32.4%      7.9%     59.8%  
+  4                     3.7    17.1%      3.1%     79.7%  
+  12                    4.3    31.3%      7.4%     61.3%  
+  16                    8.3    34.3%      8.8%     56.9%  
+  20                   12.3    41.3%     13.3%     45.4%  
+  24                   16.3    44.8%     17.2%     38.0%  
+  28                   20.3    47.3%     28.6%     24.1%  
+  32                   24.3    46.7%     32.2%     21.1%  
+  35                   27.3    43.8%     40.5%     15.7%  
+  39                   31.3    37.3%     52.3%     10.4%  
+                                                          
+✓ Size đề xuất: 8 · mô hình hybrid: P(vừa) 32.4%, P(chật) 7.9%, P(rộng) 59.8%
+! Mô hình hybrid thấy rủi ro RỘNG ở size này khá cao (60%). Tuy vậy size nhỏ hơn kế tiếp (4) không an toàn hơn (P(vừa) 
+17%), nên vẫn giữ size 8.
+            Giải thích: chọn size             
+                                              
+  Cách tính size mục tiêu            Giá trị  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Size nền theo số đo cơ thể           11.13  
+  Size nền theo lịch sử mua             6.82  
+  Trọng số lịch sử (n / (n + 2))        1.00  
+  Điều chỉnh theo danh mục 'dress'     +0.28  
+  Sản phẩm chạy to (-) / nhỏ (+)       +0.59  
+  Size mục tiêu                         7.69  
+                                              
+   Giải thích: rủi ro không vừa của size đề xuất (mô hình   
+                         hybrid MF)                         
+                                                            
+  Thành phần của điểm t (size đề xuất)             Giá trị  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Sản phẩm & size (độ lệch chung của item-size)     +0.047  
+  Lịch sử cộng tác của người dùng (p_u, b_u)        +0.841  
+  Số đo cơ thể (E(x), g(x))                         +0.463  
+  Chênh lệch size so với size ước lượng từ số đo    +0.043  
+  Tổng điểm t                                       +1.393  
+                                                            
+  Quy tắc: t < -1.064 → chật (small); -1.064 ≤ t ≤ 0.998 → vừa (fit); t > 0.998 → rộng (large)
+  Thành phần dương đẩy về phía 'rộng', âm đẩy về phía 'chật'.
+                                                             
+  Đặc trưng cơ thể (phần tuyến tính g)   z-score   Đóng góp  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  bust_band_missing                        +1.00     +0.247  
+  weight_missing                           +1.00     +0.186  
+  cup_missing                              +1.00     -0.180  
+  bmi_missing                              +1.00     +0.032  
+  body_type=unknown                        +1.00     -0.026  
+                                                             
+
+$ sizerec recommend ../04-results/models/modcloth.pt --item 539980 --height 5ft6in --bra-size 34 --cup b --hips 38 --explain
+
+╭───────────────────────────────────────╮
+│ Gợi ý size cho sản phẩm 539980 (tops) │
+│ người dùng mới (cold-start)           │
+╰───────────────────────────────────────╯
+Số đo dùng (đơn vị inch / lbs): height=66, bust_band=34, cup=2, hips=38
+       Các size của sản phẩm (size mục tiêu ≈ 7.8)        
+                                                          
+  Size   Cách size mục tiêu   P(vừa)   P(chật)   P(rộng)  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  8                     0.2    38.6%     34.1%     27.3%  
+  4                     3.8    38.6%     33.7%     27.7%  
+  12                    4.2    38.5%     35.1%     26.5%  
+  1                     6.8    38.7%     32.9%     28.4%  
+  15                    7.2    38.7%     32.7%     28.6%  
+  20                   12.2    38.8%     30.3%     30.9%  
+  26                   18.2    38.7%     32.4%     28.9%  
+  32                   24.2    38.8%     31.1%     30.1%  
+  38                   30.2    37.7%     38.9%     23.4%  
+                                                          
+✓ Size đề xuất: 8 · mô hình hybrid: P(vừa) 38.6%, P(chật) 34.1%, P(rộng) 27.3%
+! Mô hình hybrid thấy rủi ro CHẬT ở size này hơi cao (34%). Tuy vậy size lớn hơn kế tiếp (12) không an toàn hơn (P(vừa) 
+38%), nên vẫn giữ size 8.
+            Giải thích: chọn size            
+                                             
+  Cách tính size mục tiêu           Giá trị  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Size nền theo số đo cơ thể           7.50  
+  Size nền theo lịch sử mua               —  
+  Trọng số lịch sử (n / (n + 2))       0.00  
+  Điều chỉnh theo danh mục 'tops'     -0.15  
+  Sản phẩm chạy to (-) / nhỏ (+)      +0.43  
+  Size mục tiêu                        7.78  
+                                             
+   Giải thích: rủi ro không vừa của size đề xuất (mô hình   
+                         hybrid MF)                         
+                                                            
+  Thành phần của điểm t (size đề xuất)             Giá trị  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Sản phẩm & size (độ lệch chung của item-size)     -0.093  
+  Lịch sử cộng tác của người dùng (p_u, b_u)        +0.000  
+  Số đo cơ thể (E(x), g(x))                         -0.244  
+  Chênh lệch size so với size ước lượng từ số đo    +0.005  
+  Tổng điểm t                                       -0.332  
+                                                            
+  Quy tắc: t < -0.990 → chật (small); -0.990 ≤ t ≤ 0.648 → vừa (fit); t > 0.648 → rộng (large)
+  Thành phần dương đẩy về phía 'rộng', âm đẩy về phía 'chật'.
+                                                             
+  Đặc trưng cơ thể (phần tuyến tính g)   z-score   Đóng góp  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  shoe_missing                             +1.00     -0.136  
+  hips                                     -0.41     -0.076  
+  cup                                      -1.01     +0.066  
+  bust_missing                             +1.00     +0.050  
+  bust_band                                -0.61     +0.045  
+                                                             
+
+$ sizerec recommend ../04-results/models/rtr.pt --item 126335 --height 168cm --weight 59kg --json
+
+{
+  "item_id": "126335",
+  "category": "dress",
+  "user_id": null,
+  "user_status": "người dùng mới (cold-start)",
+  "user_history": 0,
+  "body_used": {
+    "height": 66.14173228346456,
+    "weight": 130.07258,
+    "bmi": 20.902101359161847
+  },
+  "recommended_size": 12.0,
+  "fit_probability": 0.4532665014266968,
+  "risk_small": 0.1803172379732132,
+  "risk_large": 0.3664162755012512,
+  "advice": "Mô hình hybrid thấy rủi ro RỘNG ở size này hơi cao (37%). Nếu phân vân, cân nhắc size 8: rủi ro rộng 35%, P(vừa) 46%.",
+  "size_estimate": {
+    "base_body": 9.334638257345134,
+    "user_base": null,
+    "user_weight": 0.0,
+    "category_offset": 0.2764837030016992,
+    "item_offset": 0.5949835106604442,
+    "target": 10.206105471007277
+  },
+  "thresholds": {
+    "theta_small": -1.063912272453308,
+    "theta_large": 0.997909426689148
+  },
+  "ranking": [
+    {
+      "size": 12.0,
+      "distance": 1.7938945289927233,
+      "p_small": 0.1803172379732132,
+      "p_fit": 0.4532665014266968,
+      "p_large": 0.3664162755012512,
+      "score_t": 0.45028743147850037,
+      "terms": {
+        "item_bias": 0.10288874059915543,
+        "user_collab": 0.0,
+        "body": 0.3617634177207947,
+        "size_gap": -0.01436470914632082
+      }
+    },
+    {
+      "size": 8.0,
+      "distance": 2.2061054710072767,
+      "p_small": 0.19443540275096893,
+      "p_fit": 0.46040356159210205,
+      "p_large": 0.3451610207557678,
+      "score_t": 0.3575311601161957,
+      "terms": {
+        "item_bias": 0.046867795288562775,
+        "user_collab": 0.0,
+        "body": 0.3009754419326782,
+        "size_gap": 0.009687935933470726
+      }
+    },
+    {
+      "size": 16.0,
+      "distance": 5.793894528992723,
+      "p_small": 0.19010868668556213,
+      "p_fit": 0.4584062397480011,
+      "p_large": 0.35148507356643677,
+      "score_t": 0.3853917717933655,
+      "terms": {
+        "item_bias": 0.10310694575309753,
+        "user_collab": 0.0,
+        "body": 0.3207021951675415,
+        "size_gap": -0.038417354226112366
+      }
+    },
+    {
+      "size": 4.0,
+      "distance": 6.206105471007277,
+      "p_small": 0.09683123975992203,
+      "p_fit": 0.36049336194992065,
+      "p_large": 0.5426753759384155,
+      "score_t": 1.169027328491211,
+      "terms": {
+        "item_bias": 0.12652593851089478,
+        "user_collab": 0.0,
+        "body": 1.008760929107666,
+        "size_gap": 0.0337405800819397
+      }
+    },
+    {
+      "size": 20.0,
+      "distance": 9.793894528992723,
+      "p_small": 0.2500576078891754,
+      "p_fit": 0.4737677276134491,
+      "p_large": 0.2761746644973755,
+      "score_t": 0.03439272940158844,
+      "terms": {
+        "item_bias": 0.08117663115262985,
+        "user_collab": 0.0,
+        "body": 0.015686094760894775,
+        "size_gap": -0.06246999651193619
+      }
+    },
+    {
+      "size": 24.0,
+      "distance": 13.793894528992723,
+      "p_small": 0.276664137840271,
+      "p_fit": 0.47373688220977783,
+      "p_large": 0.24959897994995117,
+      "score_t": -0.10284282267093658,
+      "terms": {
+        "item_bias": 0.1074909120798111,
+        "user_collab": 0.0,
+        "body": -0.12381109595298767,
+        "size_gap": -0.08652263879776001
+      }
+    },
+    {
+      "size": 28.0,
+      "distance": 17.793894528992723,
+      "p_small": 0.4104051887989044,
+      "p_fit": 0.4350683391094208,
+      "p_large": 0.1545264720916748,
+      "score_t": -0.7016216516494751,
+      "terms": {
+        "item_bias": 0.05106578394770622,
+        "user_collab": 0.0,
+        "body": -0.6421121954917908,
+        "size_gap": -0.11057528853416443
+      }
+    },
+    {
+      "size": 32.0,
+      "distance": 21.793894528992723,
+      "p_small": 0.4400458037853241,
+      "p_fit": 0.42062172293663025,
+      "p_large": 0.13933247327804565,
+      "score_t": -0.8229361176490784,
+      "terms": {
+        "item_bias": 0.08545368909835815,
+        "user_collab": 0.0,
+        "body": -0.7737618684768677,
+        "size_gap": -0.13462792336940765
+      }
+    },
+    {
+      "size": 35.0,
+      "distance": 24.793894528992723,
+      "p_small": 0.49477502703666687,
+      "p_fit": 0.3902519643306732,
+      "p_large": 0.11497300863265991,
+      "score_t": -1.0430116653442383,
+      "terms": {
+        "item_bias": 0.05830852687358856,
+        "user_collab": 0.0,
+        "body": -0.9518812298774719,
+        "size_gap": -0.1494390070438385
+      }
+    },
+    {
+      "size": 39.0,
+      "distance": 28.793894528992723,
+      "p_small": 0.5277631878852844,
+      "p_fit": 0.3700343370437622,
+      "p_large": 0.10220247507095337,
+      "score_t": -1.1750794649124146,
+      "terms": {
+        "item_bias": 0.045206040143966675,
+        "user_collab": 0.0,
+        "body": -1.0708465576171875,
+        "size_gap": -0.1494390070438385
+      }
+    },
+    {
+      "size": 45.0,
+      "distance": 34.79389452899272,
+      "p_small": 0.5920079946517944,
+      "p_fit": 0.32738250494003296,
+      "p_large": 0.08060950040817261,
+      "score_t": -1.4361848831176758,
+      "terms": {
+        "item_bias": 0.025696752592921257,
+        "user_collab": 0.0,
+        "body": -1.312442660331726,
+        "size_gap": -0.1494390070438385
+      }
+    },
+    {
+      "size": 51.0,
+      "distance": 40.79389452899272,
+      "p_small": 0.6956299543380737,
+      "p_fit": 0.25163978338241577,
+      "p_large": 0.0527302622795105,
+      "score_t": -1.8904860019683838,
+      "terms": {
+        "item_bias": 0.0029875673353672028,
+        "user_collab": 0.0,
+        "body": -1.7440346479415894,
+        "size_gap": -0.1494390070438385
+      }
+    },
+    {
+      "size": 57.0,
+      "distance": 46.79389452899272,
+      "p_small": 0.8013420701026917,
+      "p_fit": 0.16808301210403442,
+      "p_large": 0.030574917793273926,
+      "score_t": -2.45861554145813,
+      "terms": {
+        "item_bias": -0.06689237058162689,
+        "user_collab": 0.0,
+        "body": -2.242284059524536,
+        "size_gap": -0.1494390070438385
+      }
+    }
+  ]
+}
+
